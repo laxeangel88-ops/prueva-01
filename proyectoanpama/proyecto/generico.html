@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Objeto</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e5e5e5;
+        }
+
+        header {
+            background-color: #1f1f1f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            color: #bdbdbd;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .card-header {
+            background-color: #1f1f1f;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-header h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .price {
+            color: #ffd000;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .info span:first-child {
+            color: #777;
+        }
+
+        .description {
+            background-color: #f2f2f2;
+            padding: 15px;
+            border-left: 4px solid #1f1f1f;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .back-btn {
+            display: block;
+            width: 95%;
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #1f1f1f;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.2s;
+        }
+
+        .back-btn:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>MAPSHOP</h1>
+    <p>Detalle del objeto</p>
+</header>
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h2>ID: 005 - Objeto Genérico</h2>
+            <div class="price">45.00€</div>
+        </div>
+
+        <div class="card-body">
+            <div class="info">
+                <span>CATEGORÍA</span>
+                <span>General</span>
+            </div>
+
+            <div class="info">
+                <span>ESTADO</span>
+                <span>Buen estado</span>
+            </div>
+
+            <div class="info">
+                <span>PROPIETARIO</span>
+                <span>Usuario X</span>
+            </div>
+
+            <div class="description">
+                Este es un objeto genérico de ejemplo. Funciona correctamente y cumple su función básica.
+                Ideal para pruebas o demostraciones dentro del proyecto.
+            </div>
+
+            <a href="index.html" class="back-btn">Volver al inicio</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

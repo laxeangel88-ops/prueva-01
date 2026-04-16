@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="catalogo.xsl"?>
+<inventario>
+
+    <objeto>
+        <id>001</id>
+        <nombre>Tarjeta Gráfica NVIDIA GTX 1050 Ti</nombre>
+        <categoria>Componentes PC</categoria>
+        <estado>Buen estado</estado>
+        <precio>50.00</precio>
+        <descripcion>Tarjeta gráfica de 4GB GDDR5. Funciona perfectamente, ideal para gaming 1080p. Ventilador sin ruidos.</descripcion>
+        <propietario>Laura G.</propietario>
+    </objeto>
+
+    <objeto>
+        <id>002</id>
+        <nombre>Procesador Intel Core i5-8400</nombre>
+        <categoria>Componentes PC</categoria>
+        <estado>Como nuevo</estado>
+        <precio>80.00</precio>
+        <descripcion>Procesador hexacore de 8ª generación, socket LGA1151. Incluye disipador de stock original.</descripcion>
+        <propietario>Carlos M.</propietario>
+    </objeto>
+
+    <objeto>
+        <id>003</id>
+        <nombre>Memoria RAM DDR4 8GB Kingston</nombre>
+        <categoria>Componentes PC</categoria>
+        <estado>Buen estado</estado>
+        <precio>30.00</precio>
+        <descripcion>Módulo DDR4 a 2400MHz. Probada sin errores con Memtest86. Compatible con la mayoría de placas base modernas.</descripcion>
+        <propietario>Sofía R.</propietario>
+    </objeto>
+
+    <objeto>
+        <id>004</id>
+        <nombre>Disco Duro HDD Seagate 1TB</nombre>
+        <categoria>Componentes PC</categoria>
+        <estado>Estado aceptable</estado>
+        <precio>70.00</precio>
+        <descripcion>Disco mecánico 1TB, 7200RPM, SATA III. SMART en verde. Perfecto como almacenamiento secundario.</descripcion>
+        <propietario>Andrés P.</propietario>
+    </objeto>
+
+</inventario>

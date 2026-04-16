@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catálogo - MAPSHOP</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    header h1 { font-size: 2rem; margin-bottom: 8px; }
+    header p  { font-size: 0.9rem; color: #aaa; }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .catalogo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .tarjeta {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .tarjeta-header {
+      background-color: #222;
+      color: white;
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .tarjeta-id   { font-size: 0.7rem; color: #aaa; margin-bottom: 4px; }
+    .tarjeta-nombre { font-size: 1rem; font-weight: bold; }
+
+    .tarjeta-precio {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ffcc00;
+      white-space: nowrap;
+      margin-left: 12px;
+    }
+
+    .tarjeta-body { padding: 16px; }
+
+    .campo {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+      font-size: 0.85rem;
+    }
+    .campo:last-child { border-bottom: none; }
+
+    .campo-label { color: #888; font-weight: bold; text-transform: uppercase; font-size: 0.75rem; }
+    .campo-valor { color: #333; text-align: right; }
+
+    .descripcion {
+      background: #f9f9f9;
+      border-left: 4px solid #222;
+      padding: 10px 14px;
+      margin: 0 16px 16px;
+      font-size: 0.82rem;
+      color: #555;
+      line-height: 1.6;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .qr-section {
+      text-align: center;
+      padding: 16px;
+      border-top: 1px solid #eee;
+    }
+
+    .qr-section p {
+      font-size: 0.7rem;
+      color: #aaa;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      letter-spacing: 0.05em;
+    }
+
+    .qr-section img {
+      width: 120px;
+      height: 120px;
+    }
+
+    .qr-id {
+      font-size: 0.72rem;
+      color: #aaa;
+      margin-top: 6px;
+    }
+
+    .btn-volver {
+      display: block;
+      width: fit-content;
+      margin: 30px auto;
+      background-color: #222;
+      color: white;
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 6px;
+      font-size: 0.95rem;
+    }
+    .btn-volver:hover { background-color: #444; }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.5rem; }
+      .catalogo { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🖥️ MAPSHOP</h1>
+    <p>Catálogo de objetos disponibles</p>
+  </header>
+
+  <main>
+    <h2>4 objetos en venta</h2>
+
+    <div class="catalogo">
+
+      <!-- OBJETO 001 -->
+      <div class="tarjeta">
+        <div class="tarjeta-header">
+          <div>
+            <div class="tarjeta-id">ID: 001</div>
+            <div class="tarjeta-nombre">Tarjeta Gráfica NVIDIA GTX 1050 Ti</div>
+          </div>
+          <div class="tarjeta-precio">50.00€</div>
+        </div>
+        <div class="tarjeta-body">
+          <div class="campo">
+            <span class="campo-label">Categoría</span>
+            <span class="campo-valor">Componentes PC</span>
+          </div>
+          <div class="campo">
+            <span class="campo-label">Estado</span>
+            <span class="campo-valor">Buen estado</span>
+          </div>
+          <div class="campo">
+            <span class="campo-label">Propietario</span>
+            <span class="campo-valor">Laura G.</span>
+          </div>
+        </div>
+        <div class="descripcion">
+          Tarjeta gráfica de 4GB GDDR5. Funciona perfectamente, ideal para gaming 1080p. Ventilador sin ruidos.
+        </div>
+        <div class="qr-section">
+          <p>Código QR</p>
+          <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://69df673726dd525a3caeb3d0--generico1.netlify.app/&format=svg&size=120x120" alt="QR objeto 001"/>
+          <div class="qr-id">item_001</div>
+        </div>
+      </div>
+
+      <!-- OBJETO 002 -->
+      <div class="tarjeta">
+        <div class="tarjeta-header">
+          <div>
+            <div class="tarjeta-id">ID: 002</div>
+            <div class="tarjeta-nombre">Procesador Intel Core i5-8400</div>
+          </div>
+          <div class="tarjeta-precio">80.00€</div>
+        </div>
+        <div class="tarjeta-body">
+          <div class="campo">
+            <span class="campo-label">Categoría</span>
+            <span class="campo-valor">Componentes PC</span>
+          </div>
+          <div class="campo">
+            <span class="campo-label">Estado</span>
+            <span class="campo-valor">Como nuevo</span>
+          </div>
+          <div class="campo">
+            <span class="campo-label">Propietario</span>
+            <span class="campo-valor">Carlos M.</span>
+          </div>
+        </div>
+        <div class="descripcion">
+          Procesador hexacore de 8ª generación, socket LGA1151. Incluye disipador de stock original.
+        </div>
+        <div class="qr-section">
+          <p>Código QR</p>
+          <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://69df673726dd525a3caeb3d0--generico1.netlify.app/&format=svg&size=120x120" alt="QR objeto 002"/>
+          <div class="qr-id">item_002</div>
+        </div>
+      </div>
+
+      <!-- OBJETO 003 -->
+      <div class="tarjeta">
+        <div class="tarjeta-header">
+          <div>
+            <div class="tarjeta-id">ID: 003</div>
+            <div class="tarjeta-nombre">Memoria RAM DDR4 8GB Kingston</div>
+          </div>
+          <div class="tarjeta-precio">30.00€</div>
+        </div>
+        <div class="tarjeta-body">
+          <div class="campo">
+            <span class="campo-label">Categoría</span>
+            <span class="campo-valor">Componentes PC</span>
+          </div>
+          <div class="campo">
+            <span class="campo-label">Estado</span>
+            <span class="campo-valor">Buen estado</span>
+          </div>
+          <div class="campo">
+            <span class="campo-label">Propietario</span>
+            <span class="campo-valor">Sofía R.</span>
+          </div>
+        </div>
+        <div class="descripcion">
+          Módulo DDR4 a 2400MHz. Probada sin errores con Memtest86. Compatible con la mayoría de placas base modernas.
+        </div>
+        <div class="qr-section">
+          <p>Código QR</p>
+          <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://69df673726dd525a3caeb3d0--generico1.netlify.app/&format=svg&size=120x120" alt="QR objeto 003"/>
+          <div class="qr-id">item_003</div>
+        </div>
+      </div>
+
+      <!-- OBJETO 004 -->
+      <div class="tarjeta">
+        <div class="tarjeta-header">
+          <div>
+            <div class="tarjeta-id">ID: 004</div>
+            <div class="tarjeta-nombre">Disco Duro HDD Seagate 1TB</div>
+          </div>
+          <div class="tarjeta-precio">70.00€</div>
+        </div>
+        <div class="tarjeta-body">
+          <div class="campo">
+            <span class="campo-label">Categoría</span>
+            <span class="campo-valor">Componentes PC</span>
+          </div>
+          <div class="campo">
+            <span class="campo-label">Estado</span>
+            <span class="campo-valor">Estado aceptable</span>
+          </div>
+          <div class="campo">
+            <span class="campo-label">Propietario</span>
+            <span class="campo-valor">Andrés P.</span>
+          </div>
+        </div>
+        <div class="descripcion">
+          Disco mecánico 1TB, 7200RPM, SATA III. SMART en verde. Perfecto como almacenamiento secundario.
+        </div>
+        <div class="qr-section">
+          <p>Código QR</p>
+          <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://69df673726dd525a3caeb3d0--generico1.netlify.app/&format=svg&size=120x120" alt="QR objeto 004"/>
+          <div class="qr-id">item_004</div>
+        </div>
+      </div>
+
+    </div>
+
+    <a href="index.html" class="btn-volver">← Volver al inicio</a>
+  </main>
+
+  <footer>
+    <p>MAPSHOP 2026 — IES Aljada — Generado con XML + XSLT</p>
+  </footer>
+
+</body>
+</html>

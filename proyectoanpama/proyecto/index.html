@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAPSHOP - Mercadillo Tecnológico</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 1rem;
+      color: #aaa;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: white;
+      border-radius: 8px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #222;
+      padding-bottom: 8px;
+    }
+
+    .info-tabla {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .info-tabla td {
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .info-tabla td:first-child {
+      font-weight: bold;
+      width: 40%;
+      color: #555;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    .btn {
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+      background-color: #222;
+      color: white;
+      text-decoration: none;
+      padding: 14px 32px;
+      border-radius: 6px;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background-color: #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85rem;
+      color: #888;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.8rem; }
+      section { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🖥️ MAPSHOP</h1>
+    <p>Mercadillo Tecnológico — Componentes PC de segunda mano</p>
+  </header>
+
+  <main>
+
+    <!-- DATOS DEL EVENTO -->
+    <section>
+      <h2>📅 Datos del evento</h2>
+      <table class="info-tabla">
+        <tr>
+          <td>Fecha</td>
+          <td>26 de marzo de 2026</td>
+        </tr>
+        <tr>
+          <td>Hora</td>
+          <td>Toda la mañana</td>
+        </tr>
+        <tr>
+          <td>Lugar</td>
+          <td>Patio del IES Aljada</td>
+        </tr>
+        <tr>
+          <td>Acceso</td>
+          <td>Gratuito</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- NORMAS -->
+    <section>
+      <h2>📋 Normas del mercadillo</h2>
+      <ul>
+        <li>Cada alumno puede vender <strong>un solo objeto</strong>.</li>
+        <li>El objeto debe estar en <strong>buen estado y funcionar</strong> correctamente.</li>
+        <li>El <strong>precio es fijo</strong>, no se admiten regateos.</li>
+        <li>El pago se realiza en <strong>efectivo</strong> entre comprador y vendedor.</li>
+        <li>La organización <strong>no se responsabiliza</strong> de las transacciones.</li>
+        <li>Cada objeto lleva un <strong>código QR</strong> que enlaza a su ficha.</li>
+      </ul>
+    </section>
+
+    <!-- ENLACE AL CATÁLOGO -->
+    <section>
+      <h2>🛒 Catálogo de objetos</h2>
+      <p style="margin-bottom: 20px; color: #555;">
+        Consulta todos los objetos disponibles en el catálogo generado automáticamente desde el inventario XML.
+      </p>
+      <a href="catalogo.html" class="btn">Ver catálogo completo</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>MAPSHOP 2026 — IES Aljada — Generado con XML + XSLT</p>
+  </footer>
+
+</body>
+</html>
